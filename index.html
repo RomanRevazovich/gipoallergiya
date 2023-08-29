@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="source/styles/video.css">
+
+    <title>Гипоаллергенный сайт</title>
+
+</head>
+
+<style>
+    @font-face {
+        font-family: 'SlimamifBold';
+        src: local('SlimamifBold'), url(source/fonts/Slimamif.ttf);
+    }
+
+    @media (max-width: 755px) {
+        .carousel-indicators {
+            display: none;
+        }
+    }
+
+    .call {
+        animation: myAnim 2s ease 0s infinite normal none;
+    }
+
+    @keyframes myAnim {
+
+        0%,
+        100% {
+            transform: translateX(0%);
+            transform-origin: 50% 50%;
+        }
+
+        15% {
+            transform: translateX(-30px) rotate(-6deg);
+        }
+
+        30% {
+            transform: translateX(15px) rotate(6deg);
+        }
+
+        45% {
+            transform: translateX(-15px) rotate(-3.6deg);
+        }
+
+        60% {
+            transform: translateX(9px) rotate(2.4deg);
+        }
+
+        75% {
+            transform: translateX(-6px) rotate(-1.2deg);
+        }
+    }
+
+    body {
+        font-family: SlimamifBold, serif;
+        background: linear-gradient(90deg, lightblue 0%, pink 51%);
+    }
+
+    .navbar-brand img {
+        width: 2rem;
+        margin: auto;
+    }
+
+    .bg-header {
+        background-color: pink;
+    }
+
+    .navbar-toggler {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .right-bar {
+        color: black;
+        font-size: 12px;
+        margin-top: 2em;
+        background-color: lightblue;
+        border-style: double;
+        border-radius: 6px;
+    }
+
+    .slide-text {
+        margin: auto auto;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid bg-header">
+                <a class="navbar-brand" href="/"><img src="source/images/baby_spoon.png" alt="..."></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                        <a class="nav-link" href="pricing.html">Товары</a>
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="bg-video">
+            <video src="source/files/Видео WhatsApp 2023-08-29 в 20.58.57.mp4" type="video/mp4" autoplay muted
+                loop></video>
+            <div class="effect"></div>
+            <div class="video-text">
+                <h1>Счастье впереди!</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 text-center">
+            <div class="row">
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-8 col-md-12 h-100">
+                    <div class="row">
+
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/baby_spoon.png" style="height: 500px;">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-text">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+                                                    praesentium.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/karusel (1).png" style="height: 500px;">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-text">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+                                                    praesentium.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/karusel (2).png" style="height: 500px;">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-text">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+                                                    praesentium.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/karusel (3).png" style="height: 500px;">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-text">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+                                                    praesentium.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-block w-100">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <img src="source/images/karusel (4).png" style="height: 500px;">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 slide-text">
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia,
+                                                    praesentium.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 mt-5">
+                            <p>Я могу Вам помочь?</p>
+                            <a href="contacts.html"><img class="call" style="width: 40px;"
+                                    src="source/images/telephone.png" alt="Звонок"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="row px-2">
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                        <div class="col-lg-12 right-bar my-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, aspernatur suscipit
+                                laboriosam tempora tenetur veritatis quis sequi voluptatibus consequuntur pariatur? <a
+                                    href="contacts.html">Узнать больше</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <a href="#">
+                        <p>Все права защищены</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <a href="contacts.html">
+                        <p>Контакты</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <a href="https://web.telegram.org/k/" target="_blank"><img style="width: 35px;"
+                            src="source/files/icons/telegram.png" alt="telegram"></a>
+                    <a href="https://vk.com/feed" target="_blank;"><img style="width: 35px;"
+                            src="source/files/icons/vkontakte.png" alt="vkontakte"></a>
+                    <a href="https://www.youtube.com/" target="_blank;"><img style="width: 35px;"
+                            src="source/files/icons/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
