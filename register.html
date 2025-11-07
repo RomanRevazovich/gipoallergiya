@@ -10,7 +10,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png" />
   <link rel="manifest" href="source/files/favicon_io/site.webmanifest" />
-  <link rel="stylesheet" href="source/styles/contacts.css" />
+  <link rel="stylesheet" href="source/styles/video.css" />
+  <link rel="stylesheet" href="source/styles/register.css" />
 
   <title>Гипоаллергенный сайт</title>
 </head>
@@ -28,8 +29,8 @@
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Главная</a>
             <a class="nav-link" href="pricing.html">Товары</a>
-            <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
-            <a class="nav-link" href="register.html">Регистрация</a>
+            <a class="nav-link" href="contacts.html">Контакты</a>
+            <a class="nav-link active" aria-current="page" href="register.html">Регистрация</a>
             <a class="nav-link" href="login.html">Авторизация</a>
           </div>
         </div>
@@ -38,25 +39,23 @@
   </header>
 
   <section>
-    <div class="container-fluid mt-4 p-4 text-center">
-      <div class="row">
-        <div style="position: relative; overflow: hidden">
-          <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-            style="color: #eee; font-size: 12px; position: absolute; top: 0px">Москва
-          </a>
-          <a href="https://yandex.ru/maps/213/moscow/house/izmaylovskoye_shosse_17k1/Z04YcQVmQEEFQFtvfXt5cX5hZw==/?ll=37.728153%2C55.781188&utm_medium=mapframe&utm_source=maps&z=17.4"
-            style="
-                color: #eee;
-                font-size: 12px;
-                position: absolute;
-                top: 14px;
-              ">Измайловское шоссе, 17к1 — Яндекс Карты
-          </a>
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.728153%2C55.781188&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.726835%2C55.780353&whatshere%5Bzoom%5D=17&z=17.4"
-            width="100%" height="600" frameborder="1" allowfullscreen="true" style="position: relative">
-          </iframe>
-        </div>
+    <div class="bg-video-register">
+      <video src="source/files/Лиза.mp4" type="video/mp4" autoplay muted loop></video>
+      <div class="effect"></div>
+      <div class="video-text">
+        <h1>Счастье впереди!</h1>
+      </div>
+    </div>
+
+    <div class="card-register">
+      <div class="register">
+        <form action="register.php" method="post">
+          <input type="text" placeholder="login" name="login" />
+          <input type="text" placeholder="password" name="password" />
+          <input type="text" placeholder="repeat password" name="repeat password" />
+          <input type="text" placeholder="email" name="email" />
+          <button type="submit">Зарегистрироваться</button>
+        </form>
       </div>
     </div>
   </section>
