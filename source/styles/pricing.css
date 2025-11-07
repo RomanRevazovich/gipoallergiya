@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "SlimamifBold";
+  src: local("SlimamifBold"), url(source/fonts/Slimamif.ttf);
+}
+
+body {
+  font-family: SlimamifBold, serif;
+  background: linear-gradient(90deg, lightblue 0%, pink 51%);
+}
+
+.navbar-brand img {
+  width: 2rem;
+  margin: auto;
+}
+
+.bg-header {
+  background-color: pink;
+}
+
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0);
+}
+
+.right-bar {
+  color: black;
+  font-size: 12px;
+  margin-top: 2em;
+  background-color: lightblue;
+  border-style: double;
+  border-radius: 6px;
+}
+
+.btn.btn-primary {
+  background-color: lightblue;
+  color: rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.btn.btn-primary:hover {
+  background-color: pink;
+}
